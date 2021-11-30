@@ -21,7 +21,8 @@ env:
     ${{ github.workspace }}/packages/ember/instance-initializers
     ${{ github.workspace }}/packages/serverless/dist-awslambda-layer/*.zip
 
-  BUILD_CACHE_KEY: ${{ github.sha }}
+  # BUILD_CACHE_KEY: ${{ github.sha }}
+  BUILD_CACHE_KEY: ${{ "kmclb-test" }}
 
 jobs:
   job_install_deps:
