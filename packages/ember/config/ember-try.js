@@ -3,7 +3,9 @@
 const getChannelURL = require('ember-source-channel-url');
 const { embroiderSafe } = require('@embroider/test-setup');
 
-console.log(process.env.sort());
+Object.keys(process.env)
+  .sort()
+  .map(key => console.log(key, process.env[key]));
 
 module.exports = async function() {
   return {
